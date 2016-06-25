@@ -50,9 +50,3 @@ class MateriaEtapa(models.Model):
     quantidade_materia_etapa = models.DecimalField("Quantidade Etapa", max_digits=20, decimal_places=2)
     etapa_producao = models.ForeignKey(EtapaProducao, on_delete=models.PROTECT, verbose_name="Etapa Produção")
     materia_prima = models.ForeignKey(MateriaPrima, on_delete=models.PROTECT, verbose_name="Matéria Prima")
-
-
-
-
-
-
