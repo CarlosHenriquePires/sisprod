@@ -4,6 +4,6 @@ from appprod.models import *
 
 # Create your views here.
 def listarprestadores(request):
-    prestadores=Prestador.objects.all().order_by('nome')
-    lista={'prestadores':prestadores}
+    prestadoress=Prestador.objects.all().order_by('nome')
+    lista={'prestadores':prestadoress}
     return render(request,'home.html',lista)
